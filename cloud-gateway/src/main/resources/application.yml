@@ -1,0 +1,24 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: CLOUD-GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: PACKAGE-SERVICE
+          uri: lb://PACKAGE-SERVICE
+          predicates:
+            - Path=/api/packages/**
+#          filters:
+#            - name: CircuitBreaker
+#              - args:
+#                  name: PACKAGE-SERVICE
+#                  fallbackuri: forward:/packagesFallbackMethod
+
+        - id: TIER-SERVICE
+          uri: lb://TIER-SERVICE
+          predicates:
+            - Path=/api/tiers/**
+
