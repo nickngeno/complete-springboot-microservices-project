@@ -1,4 +1,4 @@
-# complete-springboot-microservices-project
+# Complete-springboot-microservices-project
 This is a simple  all round spring boot microservices application.
 
 I have created two microservices which are independent of each other yet one is called by another one. 
