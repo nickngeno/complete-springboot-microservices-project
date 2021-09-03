@@ -17,5 +17,7 @@ microservice.This will help reduce time required to make common changes while al
 # Tools
 Tools used are Java, spring boot, Spring cloud, Spring Data, Eureka discovery, API Gateway,Hystrix, Github etc.
 
-I hop this application will help you understamd the basics of microservices architecture. Happy codding! 😉
+I hope this application will help you understand the basics of microservices architecture and how one can call a different microservice.
+
+Happy coding! 😉
 
